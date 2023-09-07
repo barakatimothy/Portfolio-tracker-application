@@ -1,7 +1,7 @@
 # portfolio_tracker/cli.py
 import click
-from portfolio_tracker.database import init_db
-from portfolio_tracker.models import User, Portfolio, Asset
+from database import init_db
+from models import User, Portfolio, Asset
 
 @click.group()
 def cli():

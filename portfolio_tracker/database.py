@@ -1,6 +1,6 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from portfolio_tracker.models import Base
+from models import Base
 
 def init_db(db_uri):
     engine = create_engine(db_uri)

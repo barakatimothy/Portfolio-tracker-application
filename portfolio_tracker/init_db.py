@@ -1,4 +1,4 @@
-from portfolio_tracker.database import init_db 
+from database import init_db
 
 if __name__ == '__main__':
     db_uri = "sqlite:///portfolio.db"  
