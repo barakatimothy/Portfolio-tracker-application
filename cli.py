@@ -8,11 +8,12 @@ def cli():
     pass
 
 @cli.command()
-@click.option('--db-uri', default='sqlite:///portfolio.db', help='Database URI')
+@click.option('--db-uri', type=str, default='sqlite:///portfolio.db', help='Database URI')
 def init_db(db_uri):
     """Initialize the database."""
     init_db(db_uri)
     click.echo('Database initialized.')
+
 
 
 # Create a new user
