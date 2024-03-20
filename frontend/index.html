@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Portfolio Tracker</h1>
+    </header>
+
+    <main>
+        <section id="userForm">
+            <h2>Create User</h2>
+            <form id="createUserForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter username" required>
+                <button type="submit">Create User</button>
+            </form>
+        </section>
+
+        <section id="portfolioForm">
+            <h2>Create Portfolio</h2>
+            <form id="createPortfolioForm">
+                <label for="userId">User ID:</label>
+                <input type="number" id="userId" name="userId" placeholder="Enter user ID" required>
+                <label for="portfolioName">Portfolio Name:</label>
+                <input type="text" id="portfolioName" name="portfolioName" placeholder="Enter portfolio name" required>
+                <button type="submit">Create Portfolio</button>
+            </form>
+        </section>
+
+        <section id="assetForm">
+            <h2>Add Asset</h2>
+            <form id="createAssetForm">
+                <label for="portfolioId">Portfolio ID:</label>
+                <input type="number" id="portfolioId" name="portfolioId" placeholder="Enter portfolio ID" required>
+                <label for="assetSymbol">Asset Symbol:</label>
+                <input type="text" id="assetSymbol" name="assetSymbol" placeholder="Enter asset symbol" required>
+                <label for="assetQuantity">Quantity:</label>
+                <input type="number" id="assetQuantity" name="assetQuantity" placeholder="Enter quantity" required>
+                <button type="submit">Add Asset</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
